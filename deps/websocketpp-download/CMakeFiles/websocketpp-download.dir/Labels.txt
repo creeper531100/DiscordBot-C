@@ -1,0 +1,13 @@
+# Target labels
+ websocketpp-download
+# Source files and their labels
+D:/source/dicord_bot_c/deps/websocketpp-download/CMakeFiles/websocketpp-download
+D:/source/dicord_bot_c/deps/websocketpp-download/CMakeFiles/dd50859685a1613eccdbcb53a9d047b5/websocketpp-download.rule
+D:/source/dicord_bot_c/deps/websocketpp-download/CMakeFiles/3d915619c0235ba52bf797fe749bbf5a/websocketpp-download-complete.rule
+D:/source/dicord_bot_c/deps/websocketpp-download/CMakeFiles/f0dde9c26db132c071febd1a506ee0f8/websocketpp-download-build.rule
+D:/source/dicord_bot_c/deps/websocketpp-download/CMakeFiles/f0dde9c26db132c071febd1a506ee0f8/websocketpp-download-configure.rule
+D:/source/dicord_bot_c/deps/websocketpp-download/CMakeFiles/f0dde9c26db132c071febd1a506ee0f8/websocketpp-download-download.rule
+D:/source/dicord_bot_c/deps/websocketpp-download/CMakeFiles/f0dde9c26db132c071febd1a506ee0f8/websocketpp-download-install.rule
+D:/source/dicord_bot_c/deps/websocketpp-download/CMakeFiles/f0dde9c26db132c071febd1a506ee0f8/websocketpp-download-mkdir.rule
+D:/source/dicord_bot_c/deps/websocketpp-download/CMakeFiles/f0dde9c26db132c071febd1a506ee0f8/websocketpp-download-patch.rule
+D:/source/dicord_bot_c/deps/websocketpp-download/CMakeFiles/f0dde9c26db132c071febd1a506ee0f8/websocketpp-download-test.rule

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\asio-download\CMakeFiles\927006a89c46685bd8352844d7f94faf\asio-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\asio-download\CMakeFiles\927006a89c46685bd8352844d7f94faf\asio-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\asio-download\CMakeFiles\927006a89c46685bd8352844d7f94faf\asio-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\asio-download\CMakeFiles\927006a89c46685bd8352844d7f94faf\asio-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\asio-download\CMakeFiles\927006a89c46685bd8352844d7f94faf\asio-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\asio-download\CMakeFiles\927006a89c46685bd8352844d7f94faf\asio-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\asio-download\CMakeFiles\927006a89c46685bd8352844d7f94faf\asio-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\asio-download\CMakeFiles\07994cfa5085d88e0baafe3cc905ea28\asio-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\asio-download\CMakeFiles\cae5a091ccfa1c524d341a6ea26e9a03\asio-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\asio-download\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\source\dicord_bot_c\deps\asio-download\CMakeFiles\asio-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{898D3932-569D-3BD0-86FB-34C66041813D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

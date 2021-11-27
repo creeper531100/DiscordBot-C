@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\_deps\curl-subbuild\CMakeFiles\2499fb276fba506d6ce931962bcc455b\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{992B7E69-3BE2-38F5-BAE8-C2D0E731D237}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

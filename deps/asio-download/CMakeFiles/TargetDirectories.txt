@@ -1,0 +1,3 @@
+D:/source/dicord_bot_c/deps/asio-download/CMakeFiles/asio-download.dir
+D:/source/dicord_bot_c/deps/asio-download/CMakeFiles/ALL_BUILD.dir
+D:/source/dicord_bot_c/deps/asio-download/CMakeFiles/ZERO_CHECK.dir

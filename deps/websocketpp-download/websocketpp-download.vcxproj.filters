@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\websocketpp-download\CMakeFiles\f0dde9c26db132c071febd1a506ee0f8\websocketpp-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\websocketpp-download\CMakeFiles\f0dde9c26db132c071febd1a506ee0f8\websocketpp-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\websocketpp-download\CMakeFiles\f0dde9c26db132c071febd1a506ee0f8\websocketpp-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\websocketpp-download\CMakeFiles\f0dde9c26db132c071febd1a506ee0f8\websocketpp-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\websocketpp-download\CMakeFiles\f0dde9c26db132c071febd1a506ee0f8\websocketpp-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\websocketpp-download\CMakeFiles\f0dde9c26db132c071febd1a506ee0f8\websocketpp-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\websocketpp-download\CMakeFiles\f0dde9c26db132c071febd1a506ee0f8\websocketpp-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\websocketpp-download\CMakeFiles\3d915619c0235ba52bf797fe749bbf5a\websocketpp-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\websocketpp-download\CMakeFiles\dd50859685a1613eccdbcb53a9d047b5\websocketpp-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\websocketpp-download\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\source\dicord_bot_c\deps\websocketpp-download\CMakeFiles\websocketpp-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B680F4DE-125E-38DD-A9EB-A396955E576F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

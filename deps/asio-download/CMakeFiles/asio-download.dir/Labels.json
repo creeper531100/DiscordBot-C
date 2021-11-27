@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/source/dicord_bot_c/deps/asio-download/CMakeFiles/asio-download"
+		},
+		{
+			"file" : "D:/source/dicord_bot_c/deps/asio-download/CMakeFiles/cae5a091ccfa1c524d341a6ea26e9a03/asio-download.rule"
+		},
+		{
+			"file" : "D:/source/dicord_bot_c/deps/asio-download/CMakeFiles/07994cfa5085d88e0baafe3cc905ea28/asio-download-complete.rule"
+		},
+		{
+			"file" : "D:/source/dicord_bot_c/deps/asio-download/CMakeFiles/927006a89c46685bd8352844d7f94faf/asio-download-build.rule"
+		},
+		{
+			"file" : "D:/source/dicord_bot_c/deps/asio-download/CMakeFiles/927006a89c46685bd8352844d7f94faf/asio-download-configure.rule"
+		},
+		{
+			"file" : "D:/source/dicord_bot_c/deps/asio-download/CMakeFiles/927006a89c46685bd8352844d7f94faf/asio-download-download.rule"
+		},
+		{
+			"file" : "D:/source/dicord_bot_c/deps/asio-download/CMakeFiles/927006a89c46685bd8352844d7f94faf/asio-download-install.rule"
+		},
+		{
+			"file" : "D:/source/dicord_bot_c/deps/asio-download/CMakeFiles/927006a89c46685bd8352844d7f94faf/asio-download-mkdir.rule"
+		},
+		{
+			"file" : "D:/source/dicord_bot_c/deps/asio-download/CMakeFiles/927006a89c46685bd8352844d7f94faf/asio-download-patch.rule"
+		},
+		{
+			"file" : "D:/source/dicord_bot_c/deps/asio-download/CMakeFiles/927006a89c46685bd8352844d7f94faf/asio-download-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"asio-download"
+		],
+		"name" : "asio-download"
+	}
+}

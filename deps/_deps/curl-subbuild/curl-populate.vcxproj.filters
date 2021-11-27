@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\_deps\curl-subbuild\CMakeFiles\b9eb6430830515c40c0ec7352e3528d7\curl-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\_deps\curl-subbuild\CMakeFiles\b9eb6430830515c40c0ec7352e3528d7\curl-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\_deps\curl-subbuild\CMakeFiles\b9eb6430830515c40c0ec7352e3528d7\curl-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\_deps\curl-subbuild\CMakeFiles\b9eb6430830515c40c0ec7352e3528d7\curl-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\_deps\curl-subbuild\CMakeFiles\b9eb6430830515c40c0ec7352e3528d7\curl-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\_deps\curl-subbuild\CMakeFiles\b9eb6430830515c40c0ec7352e3528d7\curl-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\_deps\curl-subbuild\CMakeFiles\b9eb6430830515c40c0ec7352e3528d7\curl-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\_deps\curl-subbuild\CMakeFiles\b9eb6430830515c40c0ec7352e3528d7\curl-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\_deps\curl-subbuild\CMakeFiles\5598358dc38137da7ce4b17ebe2857bc\curl-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\_deps\curl-subbuild\CMakeFiles\2499fb276fba506d6ce931962bcc455b\curl-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\_deps\curl-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\source\dicord_bot_c\deps\_deps\curl-subbuild\CMakeFiles\curl-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{992B7E69-3BE2-38F5-BAE8-C2D0E731D237}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

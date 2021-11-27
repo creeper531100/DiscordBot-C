@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\cpr-download\CMakeFiles\972fb1f3648e188fd904851346232dff\cpr-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\cpr-download\CMakeFiles\972fb1f3648e188fd904851346232dff\cpr-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\cpr-download\CMakeFiles\972fb1f3648e188fd904851346232dff\cpr-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\cpr-download\CMakeFiles\972fb1f3648e188fd904851346232dff\cpr-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\cpr-download\CMakeFiles\972fb1f3648e188fd904851346232dff\cpr-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\cpr-download\CMakeFiles\972fb1f3648e188fd904851346232dff\cpr-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\cpr-download\CMakeFiles\972fb1f3648e188fd904851346232dff\cpr-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\cpr-download\CMakeFiles\5e46e494a9b96df4d45c84bd53f16f64\cpr-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\cpr-download\CMakeFiles\e8d26e3eab71f6d948bf6ca1311a2805\cpr-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\source\dicord_bot_c\deps\cpr-download\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\source\dicord_bot_c\deps\cpr-download\CMakeFiles\cpr-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{FA19BB83-2E6B-316B-993E-DAAE6E9CC362}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

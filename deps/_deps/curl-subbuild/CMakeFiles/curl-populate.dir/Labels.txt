@@ -1,0 +1,14 @@
+# Target labels
+ curl-populate
+# Source files and their labels
+D:/source/dicord_bot_c/deps/_deps/curl-subbuild/CMakeFiles/curl-populate
+D:/source/dicord_bot_c/deps/_deps/curl-subbuild/CMakeFiles/2499fb276fba506d6ce931962bcc455b/curl-populate.rule
+D:/source/dicord_bot_c/deps/_deps/curl-subbuild/CMakeFiles/5598358dc38137da7ce4b17ebe2857bc/curl-populate-complete.rule
+D:/source/dicord_bot_c/deps/_deps/curl-subbuild/CMakeFiles/b9eb6430830515c40c0ec7352e3528d7/curl-populate-build.rule
+D:/source/dicord_bot_c/deps/_deps/curl-subbuild/CMakeFiles/b9eb6430830515c40c0ec7352e3528d7/curl-populate-configure.rule
+D:/source/dicord_bot_c/deps/_deps/curl-subbuild/CMakeFiles/b9eb6430830515c40c0ec7352e3528d7/curl-populate-download.rule
+D:/source/dicord_bot_c/deps/_deps/curl-subbuild/CMakeFiles/b9eb6430830515c40c0ec7352e3528d7/curl-populate-install.rule
+D:/source/dicord_bot_c/deps/_deps/curl-subbuild/CMakeFiles/b9eb6430830515c40c0ec7352e3528d7/curl-populate-mkdir.rule
+D:/source/dicord_bot_c/deps/_deps/curl-subbuild/CMakeFiles/b9eb6430830515c40c0ec7352e3528d7/curl-populate-patch.rule
+D:/source/dicord_bot_c/deps/_deps/curl-subbuild/CMakeFiles/b9eb6430830515c40c0ec7352e3528d7/curl-populate-test.rule
+D:/source/dicord_bot_c/deps/_deps/curl-subbuild/CMakeFiles/b9eb6430830515c40c0ec7352e3528d7/curl-populate-update.rule

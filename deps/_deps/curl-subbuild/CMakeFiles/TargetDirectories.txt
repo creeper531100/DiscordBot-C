@@ -1,0 +1,3 @@
+D:/source/dicord_bot_c/deps/_deps/curl-subbuild/CMakeFiles/curl-populate.dir
+D:/source/dicord_bot_c/deps/_deps/curl-subbuild/CMakeFiles/ALL_BUILD.dir
+D:/source/dicord_bot_c/deps/_deps/curl-subbuild/CMakeFiles/ZERO_CHECK.dir
