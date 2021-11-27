@@ -39,7 +39,7 @@ void SaoFU::Client::onMessage(Message message) {
                 if (arg_count < 0) {
                     arg_count = abs(arg_count);
 
-                    if (arg_count >= 1000) {
+                    if (arg_count >= 1000) { //耞琌把计ぃ﹚把计
                         arg_count /= 1000;
                         is_unspecified = true;
                     }
@@ -58,17 +58,17 @@ void SaoFU::Client::onMessage(Message message) {
                     argv.erase(argv.begin() + arg_count, argv.end());
 
                     /*
-                     * 安data琌
-                     * 秈兵ン
-                     * 耞琌Τ砞﹚崩兵ン
+                     * 安data祇瞷ぃ琌碞糤赣把计皚ず
+                     * ┪琌把计砞﹚把计ぃ﹚把计(param_unspecified)
+                     * 穦糤赣把计皚ず
                      */
 
                     if (!data.empty() || is_unspecified) {
                         argv.push_back(data);
                     }
-
                 }
 
+                //耞把计琌单璝单玥磅︽
                 if (arg_count + 1 == argv.size()) {
                     m_commands[cmd](message, argv);
                 }

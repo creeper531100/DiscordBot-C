@@ -77,17 +77,19 @@ string SaoFU::get_time(string s) {
 }
 
 std::string SaoFU::param_fixed(int num) {
-    //參數必須符合指定數目 x == num
+    //固定參數，參數必須符合指定數目
     return std::to_string(num);
 }
 
 std::string SaoFU::param_variadic(int num) {
-    //參數不得小於等於指定數目，指定數目之後為不定引數 x <= num
+    //指定數目之不定參數，「從n之後開始」為不定參數，參數必須符合至指定數目
+    //簡單說，參數需要等同n，之後才是不定參數。
     return std::to_string(-num);
 }
 
 std::string SaoFU::param_unspecified(int num) {
-    //(預設)參數不得小於指定數目，指定數目(含)之後為不定引數 x < num
+    //(預設)含參數的不定參數，「從n開始」為不定參數，只要不要小於指定數目即可
+    //簡單說，參數n開始就是不定參數了。
     return std::to_string(-num * 1000);
 }
 
