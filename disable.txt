@@ -1,0 +1,175 @@
+class UrlHandle {
+    protected:
+        string url;
+        string original_url;
+        string header;
+        string page;
+    public:
+        string end_line = "\r\n";
+        string html = "";
+
+        UrlHandle(string url) {
+            int positive = url.find("/", 0);
+            page = url.substr(positive, url.length() - positive);
+            this->original_url = url;
+            this->url = url.substr(0, positive);
+        }
+
+        int urlpost(string data, string header = "\r\n") {
+            this->header = "PUT " + page + " HTTP/1.1" + end_line;
+            this->header += "Host: " + this->url + end_line;
+            this->header += u8"Content-Type: application/json; charset=utf-8" + end_line;
+            this->header += u8"Content-Length: " + std::to_string(data.size()) + end_line;
+            this->header += u8"dataType: json" + end_line;
+            this->header += "Connection: close" + end_line;
+            this->header += header;
+            this->header += data;
+            return this->urlhandle();
+        }
+
+        int urlopen(string header = "\r\n") {
+            this->header = "GET " + page + " HTTP/1.1" + end_line;
+            this->header += "Host: " + this->url + end_line;
+            this->header += "Content-Type: text/html; charset=UTF-8" + end_line;
+            this->header += "Connection: close" + end_line;
+            this->header += header;
+            return this->urlhandle();
+        }
+
+        void print_header() {
+            cout << this->header << std::endl;
+        }
+
+        int urlhandle() {
+            WSAData wsa_data;
+            WORD DLL_version = MAKEWORD(2, 2); //WSA版本, 2.2
+            int WSAStartup_state = WSAStartup(DLL_version, &wsa_data);
+            if (WSAStartup_state != 0) {
+                //WSA初始化
+                return -1; // "無效版本";
+            }
+            SOCKET sock = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+            /*
+             *通訊家族(af)	= IPv4
+             *接套規範(type)	= TCP協議
+             *協議(protocol) = TCP協議
+             */
+            if (sock == INVALID_SOCKET) {
+                return -2; //"無效接套";
+            }
+
+            SSLeay_add_ssl_algorithms();                     //添加SSL的加密/HASH算法
+            const SSL_METHOD* meth = SSLv23_client_method(); //客戶端，伺服端選擇SSLv23_server_method()
+            SSL_CTX* ctx = SSL_CTX_new(meth);                //建立新的SSL語境
+            if (ctx == nullptr) {
+                return -3; //"無效SSL";
+            }
+
+            //定義伺服器資訊
+            HOSTENT* host = gethostbyname(url.c_str()); //取IP
+            SOCKADDR_IN sin;
+            sin.sin_family = AF_INET;
+            sin.sin_port = htons(443);
+            memcpy(&sin.sin_addr.S_un.S_addr, host->h_addr_list[0], sizeof(sin.sin_addr.S_un.S_addr));
+
+            //連接到伺服器
+            int connect_state = connect(sock, (sockaddr*)&sin, sizeof(sin));
+            if (connect_state < 0) {
+                return -4; //"伺服器連接錯誤";
+            }
+
+            //建立SSL
+            SSL* ssl = SSL_new(ctx);
+            if (ssl == nullptr) {
+                return -5; //"建立SSL錯誤";
+            }
+
+            SSL_set_tlsext_host_name(ssl, host->h_name);
+            SSL_set_fd(ssl, sock);
+            int SSL_connect_state = SSL_connect(ssl);
+
+            if (SSL_connect_state == -1) {
+                //	printf("%s", ERR_error_string(ERR_get_error(), NULL));
+                return -6; //"SSL連接錯誤";
+            }
+
+            int SSL_write_state = SSL_write(ssl, header.c_str(), header.length());
+            if (SSL_write_state == -1) {
+                return -7; //"無法寫入";
+            }
+
+            int ret;
+            char* buf = new char[6001];
+
+            while ((ret = SSL_read(ssl, buf, 6001)) > 0) {
+                buf[ret] = '\0';
+                html += buf;
+                memset(buf, 0, sizeof(buf));
+            }
+            closesocket(sock);
+            SSL_shutdown(ssl);
+            SSL_free(ssl);
+            SSL_CTX_free(ctx);
+            delete[] buf;
+            return 0;
+        }
+
+        vector<string> search(string label) {
+            std::stringstream ss(html);
+            string to;
+            vector<string> result;
+            while (getline(ss, to, '\n')) {
+                if (to.find(label) != string::npos) {
+                    result.emplace_back(to);
+                }
+            }
+            if (result.empty())
+                result.emplace_back("<None>");
+            return result;
+        }
+
+        string get_text(int index, std::function<bool(string*)> fun = nullptr) {
+            std::stringstream ss(html);
+            int start = 0;
+            string to;
+            string result;
+            bool fun_bool = 1;
+            while (getline(ss, to)) {
+                if (to.find(u8"{") != string::npos)
+                    start++;
+                if (start >= index) {
+                    if (fun) {
+                        fun_bool = fun(&to);
+                    }
+                    if (fun_bool) {
+                        result += to;
+                    }
+                }
+            }
+            return result;
+        }
+    };
+
+    
+    /*bot.add_command(u8"test", [&bot](SleepyDiscord::Message ctx, vector<string> argv) {
+        SaoFU::JsonHandle json_handle("D:\\source\\discord_bot\\discord_bot\\json\\redstone_HDMI.json");
+        SaoFU::UrlHandle url_easy_handle("https://jsonstorage.net/api/items/afeed04f-3868-4529-9904-fd81dc3375ce");
+        url_easy_handle.urlpost(json_handle.data);
+    });
+
+    bot.add_command(u8"test2", [&bot](SleepyDiscord::Message ctx, vector<string> argv) {
+        std::vector<string> vec = { "1", "2", "3", "4", "5" };
+        
+        for (auto& a : SaoFU::enumerate(vec)) {
+            cout << a.second << std::endl;
+        }
+    });*/
+
+    /*
+    bot.add_command(u8"test2", [&bot](SleepyDiscord::Message ctx, vector<string> argv) {
+    bot.command->deleteMessage(ctx.channelID, ctx.ID);
+    string msg = ctx.author.username + ": " + argv[1];
+    bot.command->sendMessage(ctx.channelID, msg);
+    });*/
+
+    //ctx.attachments[0].url;
