@@ -63,9 +63,15 @@ void info_init(SaoFU::Client& bot) {
             else if (argv[1] == u8"shutdown") {
                 system("shutdown -s -t 60");
             }
+
             bot.command->sendMessage(ctx.channelID, "OK!");
             return;
         }
         bot.command->sendMessage(ctx.channelID, u8"好~");
+    });
+
+    auto PennyChen_data = SaoFU::data_pack("PennyChen", u8"提及PennyChen").set_emoji(u8"🤳");
+    bot.add_command(PennyChen_data, [&bot](SleepyDiscord::Message ctx, vector<string> argv) {
+        bot.command->sendMessage(ctx.channelID, u8"<@609213912038244369>🤳在幹嘛？");
     });
 }

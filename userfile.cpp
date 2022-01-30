@@ -150,7 +150,6 @@ void userfile_init(SaoFU::Client& bot) {
             size = SaoFU::rand_generate(1, 4);
         } while (!(size < vec.size()));
 
-
         for (int i = 0; i < size; i++) {
             int last_index = index;
             index = SaoFU::rand_generate(vec.size() - 1);

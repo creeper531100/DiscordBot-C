@@ -5,6 +5,8 @@
 #include "JsonHandle.h"
 #include "userfileadd.h"
 #include "userfiledel.h"
+#include "userfilelist.h"
+
 using namespace std;
 
 int main() {
@@ -18,6 +20,8 @@ int main() {
     crawler_init(bot);
     userfileadd_init(bot);
     userfiledel_init(bot);
+
+    userfilelist_init(bot);
 
     bot.run();
     return 0;
